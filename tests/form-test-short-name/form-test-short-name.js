@@ -223,14 +223,14 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
       await scrollIntoViewIfNeeded(element, timeout);
       const value = await element.evaluate(el => el.textContent);
 
-      if (value === 'name must be greater than 2 chars ') {
+      if (value === 'name must be greater than 2 chars') {
         page.screenshot({
-          path: './passed/form-test-short-name.png',
+          path: './tests/form-test-short-name/passed/form-test-short-name.png',
           type: 'png'
         })
       } else {
         page.screenshot({
-          path: './failed/form-test-short-name.png',
+          path: './tests/form-test-short-name/failed/form-test-short-name.png',
           type: 'png'
         })
       }
