@@ -1,0 +1,79 @@
+body {
+  --fontColor: #37474F;
+}
+
+form {
+  border: thin solid #aaa;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: white;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1rem;
+  color: var(--fontColor);
+}
+
+form>div {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4px;
+  margin: 4px 0;
+  color: var(--fontColor);
+}
+
+button {
+  padding: 4px 32px;
+  background-color: white;
+  border: thin solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--fontColor);
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+label p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: red;
+  display: block;
+}
+
+.visible {
+  display: block;
+}
+
+input {
+  padding: 4px 0;
+  border: none;
+  border-bottom: thin solid #ccc;
+  outline: none;
+  color: var(--fontColor);
+  font-size: .7rem;
+}
+
+input:focus {
+  border-bottom-color: blue
+}
+
+input.error {
+  color: red;
+}
